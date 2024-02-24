@@ -1,12 +1,11 @@
-import { Component } from '@angular/core';
+import { Component,OnInit } from '@angular/core';
+import { SearchBoxComponent } from '../../../shared/components/search-box/search-box.component';
 
 @Component({
   selector: 'app-by-capital-page',
   standalone: true,
-  imports: [],
-  templateUrl: './by-capital-page.component.html',
+  imports: [SearchBoxComponent],
+  templateUrl: 'by-capital-page.component.html',
   styles: ``
 })
-export class ByCapitalPageComponent {
-
-}
+export class ByCapitalPageComponent{}
