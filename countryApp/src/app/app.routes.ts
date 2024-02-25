@@ -16,6 +16,10 @@ export const routes: Routes = [
     path: 'by-capital', 
     loadChildren: () => import('./countries/country.routes').then((m) => m.countryRoutes),
   },
+  { 
+    path: 'region', 
+    loadChildren: () => import('./countries/country.routes').then((m) => m.countryRoutes),
+  },
   { path: '**', component: HomePageComponent }, // Redirige cualquier otra URL a la página de inicio
 
 ];
